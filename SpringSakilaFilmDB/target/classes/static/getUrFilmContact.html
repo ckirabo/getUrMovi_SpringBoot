@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+    <title>getUrFilm HOME</title>
+ <!-- Bootstrap core CSS -->
+    <link href="bootstrapCss/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrapCss/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+                
+  <!-- Sidebar -->
+
+ <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="getUrFilmHOME.html">
+                       Home
+                    </a>
+                </li>
+                <li>
+                    <a href="getUrFilm.html">Movies</a>
+                </li>
+  
+                <li>
+                    <a href="getUrFilmContact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+       
+
+ <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+
+                <h1 id="Title">Contact Page</h1>
+                <br>
+                <div id="contact_text">
+                <p>Thank you for visiting this website! <br>
+               
+                Hopefully you found the movie you were searching for
+                </p>
+                <br>
+                
+
+                </div>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Go to Menu</a>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="bootstrapJs/bootstrap.jquery.min.js"></script>
+    <script src="bootstrapJs/bootstrap.bundle.min.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+</html>

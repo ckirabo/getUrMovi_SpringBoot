@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>getUrFilm Movies</title>
+    <link rel="stylesheet" type="text/css" href="getUrFilmCss.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrapCss/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrapCss/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="getUrFilmHOME.html">
+                       Home
+                    </a>
+                </li>
+                <li>
+                    <a href="getUrFilm.html">Movies</a>
+                </li>
+                <li>
+                    <a href="getUrFilmContact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    
+
+
+       
+<!-- MY WORKKKKKKK -->
+<div id="title">
+	<h1>Movie List</h1>
+</div>
+
+<script src="getUrFilmJS.js"></script>
+
+<!-- seacrh bar-->
+	<h4 id="Enter_movie">Enter Movie:<h4>
+<input type="text" id="userInput" value=""/>
+<input type="button" onClick="getSimilarFilms()" value = "click"/>
+   
+  
+
+
+<!--Get all films -->
+
+
+
+
+<button  onClick="getAllFilms()">Get All Movies</button>
+
+
+<div class="dropDown">
+
+  <input type="button" onClick="getOptions()" class="dDButton" value ="Filter" />
+  
+   <div id="dDFilter" class="dDContent">
+     <li onClick="filterRating()">Rating</li>
+     <li onClick="filterLength()">Length</li>
+     <li onClick="filterYear()">Year</li>
+   </div>
+
+</div>
+
+       <div id="page-content-wrapper">
+       <div class="menuButton">
+       <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu Bar</a>
+       </div>
+
+
+<!-- Location for the tables-->
+<div id="tableText"> </div> 
+
+
+
+</div>
+
+  
+
+ <!-- Bootstrap core JavaScript -->
+    <script src="bootstrapJs/bootstrap.jquery.min.js"></script>
+    <script src="bootstrapJs/bootstrap.bundle.min.js"></script>
+    <script src="getUrFilmJS.js"></script>
+
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+
+
+<!-- MY WORKKKKKKK -->
+
+
+
+</body>
+</html>
